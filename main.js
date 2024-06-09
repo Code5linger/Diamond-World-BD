@@ -156,7 +156,7 @@ function initThreeJS() {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 }
 
-// Preloading
+// Preloading Start
 
 function preloadFile(url) {
   return new Promise((resolve, reject) => {
@@ -198,6 +198,8 @@ function preloadFiles(urls) {
     })
     .catch((error) => console.error('Error preloading files:', error));
 }
+
+// Preloading Ends
 
 function animateWords() {
   const words = ['Romance', 'Rings', 'Relationships'];
@@ -397,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'images/slide1.jpg',
     'images/slide2.jpg',
     'images/slide3.jpg',
-    'hands.mp4',
+    'handHolding-Potrate.mp4',
   ]);
 
   initThreeJS();
